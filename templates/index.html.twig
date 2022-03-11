@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+Hola
+
+{% for tarea in tareas %}
+{{tarea.titulo}}
+{% endfor %}
+<script>
+    alert('{{ app.user.email }}');
+</script>
+{% endblock %}
